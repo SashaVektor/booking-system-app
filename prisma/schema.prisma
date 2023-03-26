@@ -1,0 +1,39 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "cockroachdb"
+    url      = env("DATABASE_URL")
+}
+
+model Example {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+model MenuItem {
+    id         String   @id @default(cuid())
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+    name       String
+    price      Float
+    // description String
+    categories String[]
+    imageKey   String
+    active     Boolean  @default(true)
+}
+
+model Day {
+    id String @id @default(cuid())
+    name String
+    dayOfWeek Int
+    openTime String
+    closeTime String
+}
+
+model ClosedDay {
+    id String @id @default(cuid())
+    date DateTime  @unique
+}

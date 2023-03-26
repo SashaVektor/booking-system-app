@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.closed-day {
+    background-color: #550000;
+    color: #fff;
+}
+
+.closed-day:hover {
+    background-color: #6d0000 !important;
+    color: #fff !important;
+}
+
+.closed-day:enabled:focus {
+    background-color: #8a0000 !important;
+    color: #fff;
+}
+
+.bg-rest {
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-menu {
+    background-image: url(../assets/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-login {
+    background-image: url(../assets/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dashboard-bg {
+    background-image: url(../assets/bg-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-menu-2 {
+    background-image: url(../assets/bg-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
