@@ -22,4 +22,5 @@ const MyApp: AppType<{ session: Session | null }> = ({
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export default api.withTRPC(MyApp);
