@@ -18,7 +18,7 @@ const Login: FC = () => {
 
     const { mutate: login, isError } = trpc.admin.login.useMutation({
         onSuccess: () => {
-            return router.push("/dashboard")
+            void router.push("/dashboard")
         },
 
     })

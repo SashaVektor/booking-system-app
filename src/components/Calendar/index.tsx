@@ -71,7 +71,7 @@ const Calendar: FC<CalendarProps> = ({ days, closedDays }) => {
             You are an administrator?
             </h3>
             <Link href="/dashboard" 
-            className='p-2 bg-red-400 text-white rounded-lg'>Click here</Link>
+            className='p-2 bg-red-400 text-white rounded-lg mb-4'>Click here</Link>
           </div>
           <div className='flex flex-col items-center gap-10 justify-between lg:flex-row'>
             <div className='flex gap-6 flex-wrap lg:flex-col justify-center'>

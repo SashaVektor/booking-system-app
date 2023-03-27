@@ -55,7 +55,7 @@ const Opening: FC<OpeningProps> = ({ days }) => {
 
     return <>
         <Head>
-            <title>Menu</title>
+            <title>Opening hours</title>
             <meta name='description' content='by alex' />
             <link rel='icon' href='/logo.avif' />
         </Head>
